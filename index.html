@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tabela de Brinquedos</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Lista de Brinquedos</h1>
+      <button class="botao botao-cadastro" id="cadastrar">Cadastrar</button>
+    </header>
+    <main>
+      <table id="table" class="tabela">
+        <thead>
+          <tr>
+            <th>
+              <strong>Imagem</strong>
+            </th>
+            <th>
+              <strong>Nome</strong>
+            </th>
+            <th>
+              <strong>Descrição</strong>
+            </th>
+            <th>
+              <strong>Preço</strong>
+            </th>
+            <th>
+              <strong>Quantidade</strong>
+            </th>
+            <th>
+              <strong>Fornecedor</strong>
+            </th>
+            <th>
+              <strong>Ações</strong>
+            </th>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+        </tbody>
+      </table>
+    </main>
+
+    <div class="div-editar" id="divEditar">
+      <div class="content">
+        <form action="" id="formulario-editar">
+          <label>
+            <p>Nome:</p>
+            <input type="text" id="nome-editar" required>
+          </label>
+          <label>
+            <p>Descrição:</p>
+            <div id="descricao-editar" required contenteditable></div>
+          </label>
+          <label>
+            <p>Preço:</p>
+            <input type="number" step="0.01" id="preco-editar" required>
+          </label>
+          <label>
+            <p>Estoque:</p>
+            <input type="number" id="estoque-editar" required>
+          </label>
+          <label>
+            <p>Fornecedor:</p>
+            <input type="text" id="fornecedor-editar" required>
+          </label>
+          <label>
+            <p>Imagem:</p>
+            <input type="url" id="imagem-editar" required>
+          </label>
+          <div class="div-botoes">
+            <button type="submit" class="botao">Atualizar</button>
+            <button type="button" id="fechar-editar" onclick="fecharEditar()" class="botao">Fechar</button>
+          </div>
+        </form>
+      </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

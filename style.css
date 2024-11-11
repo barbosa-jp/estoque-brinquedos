@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --preto: #000;
+  --branco: #eee;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+
+}
+
+body {
+  background-image: url('./img/background.jpg');
+  background-size: cover;
+  padding: 0 6vw;
+}
+
+header {
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 3rem;
+  cursor: default;
+  user-select: none;
+}
+
+.tabela {
+  width: 100%;
+}
+
+.tabela thead {
+  font-size: smaller;
+  background-color: var(--preto);
+  color: white;
+}
+
+.tabela tbody td {
+  text-align: center;
+  padding: 10px;
+}
+
+.botao {
+  background-color: var(--preto);
+  color: var(--branco);
+  width: 10rem;
+  height: 3rem;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border: none;
+  transition: all 200ms;
+  cursor: pointer;
+  user-select: none;
+}
+
+.botao:hover {
+  background-color: transparent;
+  color: var(--preto);
+  border: 3px solid var(--preto);
+}
+
+.botao:active {
+  transform: scale(1.05);
+}
+
+.botao-acoes {
+  width: 7rem;
+  height: 2rem;
+  margin: 5px 0;
+}
+
+.botao-cadastro {
+  position: absolute;
+  right: 6vw;
+}
+
+.div-editar {
+  background-color: rgba(0, 0, 0, 50%);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.div-editar .content {
+  width: 60vw;
+  background-color: var(--branco);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.content form {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.content form input, .content form #descricao-editar{
+  font-size: small;
+  height: 5vh;
+  background: none;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-bottom: 2px solid var(--preto);
+  resize: none;
+  width: 100%;
+}
+
+input:focus, div:focus {
+  outline: 0;
+}
+
+form label {
+  width: 100%;
+}
